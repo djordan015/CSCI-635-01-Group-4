@@ -1,0 +1,80 @@
+# =========================
+# Python / Jupyter / ML
+# =========================
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model artifacts
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Dataset files (too large for Git)
+data/raw/
+data/processed/
+
+# Output files and temporary data
+outputs/
+logs/
+temp/
+tmp/
+*.log
+
+# Environment and dependency files
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+build/
+dist/
+
+# Mac / OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# Node / Webapp (React)
+# =========================
+
+# Frontend dependencies
+webapp/frontend/node_modules/
+webapp/frontend/.next/
+webapp/frontend/dist/
+webapp/frontend/build/
+
+# Environment files
+*.env
+*.env.local
+
+# Lockfiles (optional for cross-platform)
+package-lock.json
+yarn.lock
+
+# =========================
+# Misc
+# =========================
+# Ignore large exported files
+*.csv
+*.parquet
+*.zip
+*.tar
+*.gz
+*.npz
