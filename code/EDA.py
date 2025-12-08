@@ -11,6 +11,9 @@ from scipy.cluster.hierarchy import dendrogram, linkage, fcluster
 from scipy.spatial.distance import pdist, squareform
 from sklearn.manifold import TSNE
 
+
+# Primitive analysis of the dataset to explore directions we can take with it.
+
 # Load data
 data = pd.read_csv("../../data/processed/spotify_features.csv")
 X = data
