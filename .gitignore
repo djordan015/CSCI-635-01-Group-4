@@ -25,10 +25,6 @@ __pycache__/
 *.pth
 *.onnx
 
-# Dataset files (too large for Git)
-data/raw/
-data/processed/
-
 # Output files and temporary data
 outputs/
 logs/
@@ -78,3 +74,7 @@ yarn.lock
 *.tar
 *.gz
 *.npz
+
+# Dataset files (too large for Git)
+/data/processed/
+/data/raw/
