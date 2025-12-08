@@ -25,6 +25,10 @@ __pycache__/
 *.pth
 *.onnx
 
+# Dataset files (too large for Git)
+data/raw/
+data/processed/
+
 # Output files and temporary data
 outputs/
 logs/
