@@ -1,18 +1,18 @@
-# HarmonAIze — AI Music Genre Classification System
+# HarmonAIze - AI Music Genre Classification System
 
-HarmonAIze is a music genre classification system built as part of the CSCI-635: Introduction to Machine Learning course project (Fall 2025). We explore multiple ML paradigms - supervised learning, unsupervised clustering, and neural networks - to predict music genres from audio features.
+HarmonAIze is a music genre classification system built as part of the CSCI-635: Introduction to Machine Learning course project (Fall 2025). We explore multiple ML paradigms - unsupervised clustering, supervised learning (decision trees, logistic regression and neural networks) - to predict music genres from audio features.
 
 The system is trained on the **Spotify 1 Million Tracks Dataset**, which contains 11 audio features such as danceability, energy, valence, tempo, and acousticness for over a million songs across 82 genres.
 
 ## 🚀 Overview
 
 ### The Challenge
-Classifying 82 fine-grained genres using only 11 numerical audio features is unrealistic — our initial experiments achieved only 47% accuracy. Many genre labels (e.g., "Canadian Pop" vs "Australian Pop") are market-driven rather than acoustically distinct.
+Classifying 82 fine-grained genres using only 11 numerical audio features is unrealistic - our initial experiments achieved only 47% accuracy at their best. Many genre labels (e.g., "Canadian Pop" vs "Australian Pop") are market-driven rather than acoustically distinct.
 
 ### Our Solution
 We developed a **hybrid clustering approach** that combines:
 1. **Hierarchical clustering** on genre feature centroids to identify acoustically similar genres
-2. **Domain knowledge refinement** to ensure musically coherent groupings
+2. **Domain knowledge refinement** to refine the clusters into musically coherent groupings
 3. **Feature-based validation** to confirm sub-genre membership
 
 This reduced 82 genres → -> 10 macro-genres -> a selection of 5 maximally separable macro-genres**:
