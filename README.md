@@ -31,6 +31,15 @@ This reduced 82 genres → -> 10 macro-genres -> a selection of 5 maximally sepa
 | MLP Neural Network | 74.50% | ~0.65 |
 | **Gradient Boosted Tree** | **75.69%** | **~0.67** |
 
+GBTree likely outperformed for a few key reasons:
+
+1. Tabular data is GBT's sweet spot
+Gradient Boosted Trees consistently dominate on structured/tabular data (like the available Spotify features: danceability, energy, tempo, etc.). Neural networks shine with images, text, and sequential data but for feature tables, tree-based methods usually still win unless there are enough features and enough observations. 
+2. Captures non-linear feature interactions
+Genre classification depends on combinations of features. Metal might be high energy + low acousticness + high loudness. GBT naturally captures these interactions through its tree splits without us having to engineer them explicitly.
+
+Reference: https://arxiv.org/abs/2207.08815
+
 ## 🎯 Key Concepts Demonstrated
 
 - **Data Preprocessing**: handling missing values, normalization, feature scaling
